@@ -208,15 +208,22 @@
         display: flex;
     }
     .modg img{
-        width: 80%;
-        height: 80%;
+        width: 100%; 
+        height: auto; 
     }
     .modg div{
-        box-flex: auto;
-        flex: auto;
-        width: 25%;
-        
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto; 
+        width: 200px; 
+        margin: .5vw; 
+                
     }
+    @media screen and (max-width: 400px) {
+        .modg div { margin: 0; }
+        .modg { padding: 0; }
+        
+      }
 
     /* The Modal (background) */
 .modal {
