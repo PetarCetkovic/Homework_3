@@ -5,154 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Petar's downloads center</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        
-    <script src="main.js"></script>
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-            background-color:antiquewhite;
-        }
-        .header{
-            width: 100%;
-            background-color:rgb(19, 87, 142);
-        }
-        
-        .logo img{
-            display: inline-block;
-            width: 30%;
-            position: relative;
-        }
-        .navbar {
-            list-style-type: none;
-            display: inline;
-            font-family: 'Courier New', Courier, monospace;
-            overflow: hidden;
-            background-color:none;
-            position: relative;
-            
-            width: 55%;
-        }
-
-        .navbar li {
-            float: right;
-            margin:0;
-            padding-top: 20px;
-        }
-        .navbar li a {
-            color: white;
-            display: inline-block;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        .navbar li a:hover{
-            background-color: rgb(224, 226, 226);
-            color: steelblue;
-        }
-
-     
-
-        .main{
-        margin-left: 7%;
-        margin-right: 7%;
-        }
-
-        #slider {
-        position: relative;
-        width: 100%;
-        height: 500px;
-        overflow: hidden;
-        box-shadow: 0 0 30px rgba(0,0,0,0.3);
-        
-        }
-        #slideWrap{
-            position: relative;
-            list-style: none;
-            height: 100%;
-            width: 9999%;
-            padding: 0;
-            margin: 0;
-            transition: all 750ms ease;
-            left: 0;
-        }    
-       .main li {
-            position: relative;
-            height: 100%;
-            width: calc(80vw);
-            float: left;
-        }   
-        .main img {
-                width: 100%;
-                height: 100%;
-            }
-          .main  div {
-                width: 30%;
-                height: 100%;
-                background: white;
-                float: left;
-                margin: 0 1.5%;
-            }
-            
-         .main   ul:nth-child(1) {
-                background-color: black;
-            }
-          .main  ul:nth-child(2) {
-                background-color: rebeccapurple;
-            }
-           .main ul:nth-child(3) {
-                background-color: red;
-            }
-          .main  ul:nth-child(4) {
-                background-color: magenta;
-            }
-          .main  ul:nth-child(5) {
-                background-color: mediumseagreen;
-            }
-            
-        
-
-    #prev, #next{
-        width: 50px;
-        line-height: 50px;
-        border-radius: 50%;
-        font-size: 2rem;
-        text-shadow: 0 0 20px rgba(0,0,0,0.6);
-        text-align: center;
-        color: white;
-        text-decoration: none;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        transition: all 150ms ease;
-        
-    }
-    #prev:hover {
-        background-color: rgba(0,0,0,0.5);
-        text-shadow: 0;
-        }
-    #next:hover {
-        background-color: rgba(0,0,0,0.5);
-        text-shadow: 0;
-    }
-    #prev {  
-        left: 10px;
-    }
-    #next {
-        right: 10px;
-    }
-    
 
     </style>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="logo.png" alt="">
+            <img id = "t1" src="logo.png" alt="">
             <ul class="navbar">
                 <li><a href="#nas" class="active navc">Support</a></li>
                 <li><a href="#t3" class="navc">Privacy policy</a></li>
@@ -165,14 +28,22 @@
     <div class="main">
 
         <div class="down">
+            <div>
             <img src="https://downloadpin.com/wp-content/uploads/edd/2018/07/BitTorrent-icon.png" alt="">
-            <h1>Bittorent</h1>
-            <h3>BitTorrent introduced the torrent 
-                phenomenon that continues to be one <br>
-                 of the most hyped file transfer technologies 
-                 among Peer to Peer (P2P) users.</h3>
+        
         </div>
-            <div id="slider">
+        <div>
+            <h1>BitTorent</h1>
+            <p>BitTorrent introduced the torrent 
+                phenomenon that continues to be one <br>
+                of the most hyped file transfer technologies 
+                among Peer to Peer (P2P) users.
+            </p>
+            <button class="btn"><i class="fa fa-download"></i> Download now!</button>
+        
+        </div>
+    </div>
+            <div class="slajd" id="slider">
                 <ul id="slideWrap"> 
                       
                       <li><img src="s1.jpg" alt="nema" /></li>
@@ -183,12 +54,15 @@
                     </ul>
                 <a id="prev" href="#slider"><i class="fas fa-arrow-left"></i></a>
                 <a id="next" href="#slider"><i class="fas fa-arrow-right"></i></a>
-            /div>
+                </div>
     </div>
+    
+    <a href="#t1"><button id="myBtn" title="Go to top"><i class="fas fa-rocket"></i></button></a>
     <div>
         <footer>
 
         </footer>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
