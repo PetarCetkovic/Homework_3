@@ -55,6 +55,10 @@ window.onload = function() {
 }
 
 window.onscroll = function() {scrollFunction()};
+var dugme =  document.getElementById("myBtn");
+dugme.addEventListener("click",function(){
+      window.scrollTo(0,0);
+})
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

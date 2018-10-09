@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,13 +15,18 @@
 <body>
     <header class="header">
         <div class="logo">
+            <div>
             <img id = "t1" src="logo.png" alt="">
+            </div>
+            <div>
             <ul class="navbar">
-                <li><a href="#nas" class="active navc">Support</a></li>
-                <li><a href="#t3" class="navc">Privacy policy</a></li>
-                <li><a href="#t4" class="navc">Uninstall</a></li>
-                <li><a href="" class="navc" >Eula</a></li>
+                <li><a href="#t1" class="active navc">Home</a></li>
+                <li><a href="#l1" class="navc">Description</a></li>
+                <li><a href="#l2" class="navc">Gallery</a></li>
+               <!-- ovo eula stavih zbog contenta da je slicno kao sa originalnom stranicom ali moze i bez njega :) -->
+                <li><a href="https://downloadpin.com/eula/" target="_blank" class="navc">Eula</a></li>
             </ul>
+            </div>
         </div>
 
     </header>
@@ -45,7 +50,7 @@
     </div>
     <hr>
     <div class="decr down">
-        <h1>Description</h1>
+        <h1 id="l1">Description</h1>
         <p>
                 BitTorrent introduced the torrent phenomenon that continues to be one of the most hyped file transfer technologies among Peer to Peer (P2P) users. 
                 It consists of sharing large files, like movies, software, or games anonymously and quickly with other peers. <br> <br>
@@ -92,7 +97,7 @@
     </div>
     <hr>
         <div class="sl">
-            <h1>Gallery</h1>
+            <h1 id="l2">Gallery</h1>
             <h2>Slider</h2>
             <div class="slajd" id="slider">
                 <ul id="slideWrap"> 
@@ -162,7 +167,7 @@
         </div>
     </div>
     
-    <a href="#t1"><button id="myBtn" title="Go to top"><i class="fas fa-rocket"></i></button></a>
+    <button id="myBtn" title="Go to top"><i class="fas fa-rocket"></i></button>
     <div>
         <footer class="futer">
                 <h3>Designed by <br> <a href="https://petarzad1.surge.sh" target="_blank">Petar Ćetković</a></h3>
