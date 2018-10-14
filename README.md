@@ -5,3 +5,6 @@ in pair with Luka Raicevic
 
 2nd task:
 https://drugizadslider.surge.sh
+
+3rd task:
+https://petarerror.surge.sh
